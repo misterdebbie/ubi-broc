@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ant data results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="../style/ants.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <%= result %>
+  <h3>hello</h3>
+
+  <% for(let i = 0; i < result.length;i++) { %>
+       <h5> <span class="tiny">ndbno:</span> <a href="#"> <%= result[i].name %> </a></h5>
+       <h5 id='target'> <span class="tiny">food name:</span> <a href="#"> <%= result %> </a></h5>
+    <% } %>
+</body>
+</html>
